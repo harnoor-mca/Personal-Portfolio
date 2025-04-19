@@ -1,0 +1,368 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth dark mode transition */
+}
+.navbar-nav{
+    font-size: x-large;
+}
+.navbar{
+    background-color: #ffcbda;
+}
+.ptag{ color: #000000;
+    font-size: x-large;
+}
+.about .ptag1{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.skills p{
+    font-size: large;
+    font-weight: bold;
+}
+ h1{ 
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+body.dark-mode .carousel-control-prev{
+filter: invert(1);
+}
+body.dark-mode .carousel-control-next{
+    filter: invert(1);
+    }
+.about img{
+    width:25vw;
+    border: 5px solid rgb(54, 17, 17);
+}
+.dark-mode .img1{
+    width:25vw;
+    border: 5px solid rgb(66, 235, 0);
+}
+
+.about .btn{
+    color: #ffffff;
+    background-color: #310812;
+    font-weight: bold;
+    justify-content: center;
+}
+.about .btn:hover{
+    color: #ffffff;
+    background-color: #bb046f;
+    font-weight: bold;
+    justify-content: center;
+}
+body.dark-mode .btn {
+    color: #000000;
+    background-color: #ffd900;
+    font-weight: bold;
+    
+}
+body.dark-mode .btn:hover {
+    color: #000000;
+    background-color: #00ff0d;
+    font-weight: bold;
+    
+}
+
+.hero-section , .about , .skills,.proj ,.test ,.contact{
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/port.png') ;
+    color: #000000;
+}
+
+label{
+font: 1em sans-serif;
+font-size: larger;
+font-weight: bold;
+}
+.test p{
+    font-size: x-large;
+}
+.hero-section h1 {
+    color: #000000;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+}
+
+/* Typing effect placeholder (animated via JS) */
+#typing-effect {
+    border-right: 2px solid #887402;
+    white-space: wrap;
+    overflow: hidden;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* Section padding */
+section { height:100vh;
+    border: 1px solid #06141d;
+    padding: 100px 0;
+}
+section.contact { height:150vh;
+    border: 1px solid #06141d;
+    padding: 100px 0;
+}
+
+/* Skills Progress Bars */
+.progress {
+    border: 1px solid black;
+    background-color: #ffffff;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.progress-bar { 
+    
+    background-color: #35270d;
+    transition: width 1s ease-in-out;
+}
+.dark-mode .progress-bar { 
+    
+    background-color: #459900;
+    transition: width 1s ease-in-out;
+}
+/* Projects Section */
+.card {
+    border: 2px solid rgb(0, 0, 32);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.card:hover {
+    background-color: #1d0613;
+    color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(82, 53, 53, 0.2);
+    border:2px solid rgb(255, 255, 255);
+}
+
+.card img {
+    height: 200px;
+    object-fit:inherit;
+    opacity: 1;
+}
+
+/* Testimonials */
+.carousel-item {
+    padding: 20px;
+}
+.test cite {
+    text-align: center;
+    color: #000000;
+}
+.test .bb {
+    text-align: center;
+    color: #000000;
+}
+
+.blockquote {
+
+    font-size: 1.2rem;
+}
+
+/* Contact Form */
+form .form-control {
+    border-radius: 0;
+}
+
+form .btn {
+    
+    width: 100%;
+}
+
+/* Footer */
+footer a {
+    font-size: larger;
+    font-weight: bolder;
+    color: #ffd8ef;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+footer .bi2{
+    font-size: larger;
+    font-weight: bolder;
+    color: #ffd8ef;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.dark-mode footer a  {
+    font-size: larger;
+    font-weight: bolder;
+    color: #ffee00;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.dark-mode .bi2{
+    font-size: larger;
+    font-weight: bolder;
+    color: #eeff00;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+ 
+}
+
+address{
+    font-weight: bolder;
+}
+footer a:hover, .bi2:hover {
+    color: #ff9d76;
+}
+/* Back to Top Button */
+#backToTop {
+    display: none; /* Hidden by default, shown via JS */
+}
+/* Dark Mode */
+h1 .ptag .hero-section .dark-mode{
+    color: #f1f1f1;
+}
+.dark-mode{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/blk.png') ;
+    color: #e7e6e6;
+}
+
+body.dark-mode .hero-section , body.dark-mode .about ,body.dark-mode .proj ,body.dark-mode .skills , body.dark-mode .test ,body.dark-mode .contact 
+{   color: white;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/blk.png') ;
+}
+
+body.dark-mode form .form-control{
+    background-color: white;
+    color: #bbbbbb;
+}
+body.dark-mode .test cite ,.bb{
+    text-align: center;
+    color: #ffffff;
+}
+
+body.dark-mode .test p{
+    font-size: xx-large;
+}
+body.dark-mode .form {
+    color: #ffe6e67c;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/blk.png') ;
+}
+.dark-mode .form-control {
+    
+    background: white;
+}
+.dark-mode .hero-section h1{
+   color: #f1f1f1;
+}
+.dark-mode .hero-section p {
+    color: #f1f1f1;
+    font-size: x-large;
+ }
+ .dark-mode button.navbar-toggler{
+   filter: invert(1);
+ }
+body.dark-mode .navbar {
+    background: linear-gradient(rgb(0, 0, 0));
+}
+body.dark-mode .bi ,body.dark-mode h2 ,body.dark-mode .item {
+    color: #ffffff;
+}
+body.dark-mode .item:hover{
+    color: #ffee04;
+}
+.profile{
+    color: #000000;
+}
+.profile:hover{
+    color: #310812;
+}
+.dark-mode .profile{
+    color: #887402;
+}
+.dark-mode .profile:hover{
+    color: #bbbbbb;
+}
+body .btn1{
+    font-weight: bolder;
+    width: 8%;
+}
+body.dark-mode .card {
+    border-color: #e7e6e6;
+    background-color: #121218;
+    color: #f1f1f1;
+}
+body.dark-mode .form-control {
+    background-color: #444;
+    color: #f1f1f1;
+    border: 1px solid #c9c9c9;
+}
+body.dark-mode .test .carousel {
+    color: #ffffff;
+}
+body.dark-mode .test .bb{
+    background-color:transparent;
+    color: white;
+}
+body.dark-mode .btn1{
+    color: white;
+    background-color: #000000;
+}
+
+.btn1{
+border: solid;
+color: #000000;
+background-color: transparent;
+}
+/* Hover Effects */
+.nav-link:hover, .btn1:hover {
+    color: #bd8100 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 2; }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Responsive Adjustments */
+@media (screen) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+    .hero-section img {
+        width: 100px;
+    }
+    form {
+        width: 100% !important;
+    }
+}
