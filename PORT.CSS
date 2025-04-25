@@ -112,7 +112,7 @@ font-weight: bold;
 }
 
 /* Section padding */
-section { height:100dvh;
+section { 
     border: 1px solid #06141d;
     padding: 100px 0;
 }
