@@ -12,6 +12,22 @@ body {
     scroll-behavior: smooth; /* Smooth scrolling effect */
     transition: background-color 0.3s, color 0.3s; /* Smooth dark mode transition */
 }
+.snap-container{
+height:100vh;
+overflow-y:scroll;
+scroll-snap-type: y mandatory;
+scroll-behavior:smooth;
+}
+.snap-section{
+height:100vh;
+scroll-snap-align:start;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+box-sizing:border-box;
+}
 .navbar-nav{
     font-size: x-large;
 }
