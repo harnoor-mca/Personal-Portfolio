@@ -351,18 +351,4 @@ section {
     animation: fadeIn 1s ease-in;
 }
 
-/* Responsive Adjustments */
-@media (screen) {
-    .hero-section h1 {
-        font-size: 2rem;
-    }
-    .hero-section .lead {
-        font-size: 1.2rem;
-    }
-    .hero-section img {
-        width: 100px;
-    }
-    form {
-        width: 100% !important;
-    }
-}
+
